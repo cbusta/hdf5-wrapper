@@ -6,7 +6,7 @@
     <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/cbusta/hdf5_wrapper/total">
     <img alt="GitHub" src="https://img.shields.io/github/license/cbusta/hdf5_wrapper">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cbusta/hdf5_wrapper?color=orange">
-    <img alt="Website" src="https://img.shields.io/website?up_color=blue&up_message=here&url=https%3A%2F%2Fcbustamante.co%2F">
+    <img src="https://img.shields.io/badge/Fortran-F90-blueviolet">
     <br>
     <img alt="GitHub forks" src="https://img.shields.io/github/forks/cbusta/hdf5_wrapper?style=social">
     <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/cbusta/hdf5_wrapper?style=social">
