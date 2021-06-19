@@ -1,0 +1,8 @@
+FOBJ=Lib_Kind.o Lib_Rwhdf5.o exampleh5.o 
+
+run_example: $(FOBJ)
+	$(FC) -o $@ $(FFLAGS) $(LDFLAGS) $(FOBJ) $(LIBS)
+
+Lib_Kind.o : Lib_Kind.f90 
+Lib_Rwhdf5.o : Lib_Rwhdf5.f90 Lib_Kind.o 
+exampleh5.o : exampleh5.f90 Lib_Rwhdf5.o Lib_Kind.o 
