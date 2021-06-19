@@ -41,7 +41,7 @@ Using this package requires a Fortran compiler and the HDF5 library.
 The following source files are provided with the package:
 - `Lib_Rwhdf5.f90`: Fortran wrapper that defines interfaces for reading and writing h5 files.
 - `Lib_Kind.f90`: declares double precision and integer types.
-- 'exampleh5.f90': example that illustrates the usage of the package. It writes two arrays into `data.h5`.
+- 'exampleh5.f90`: example that illustrates the usage of the package. It writes two arrays into `data.h5`.
 - `Makefile`: used to build `exampleh5.f90`. It depends on `tree.dep` that specifies the compilation order.
 - `Read_HDF5.m`: Matlab function that reads and h5 file.
 - `example_readh5.m`: example that illustrates how to use the function `Read_HDF5.m` to read `data.h5`.
