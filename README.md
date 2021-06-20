@@ -23,6 +23,7 @@
     <li><a href="#requirements">Requirements</a></li>
     <li><a href="#contents">Package contents</a></li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -48,15 +49,18 @@ The following source files are provided with the package:
 
 
 ## Usage
-After having he HDF5 library installed, load the two provided Fortran modules into your program.
+After having the HDF5 library installed, load the two provided Fortran modules into your program.
 ```
 use lib_kind
 use lib_rwhdf5
 implicit none
 ```
-The Fortran wrapper provides 4 major subroutines and 1 integer type: 
-- Subroutines `hdf5_openf` and `hdf5_closef` are used to open and close an h5 file. This are needed only when writing into an h5 file (not when reading).
-- Subroutines `hdf5_read` and `hdf5_write` are used to read and write data into an h5 file. The write subroutine should be used after an h5 file has been created with `hdf5_openf`. The file should be closed after all variables have been writen to it.
+The Fortran wrapper provides four major subroutines and one integer type: 
+- Subroutines `hdf5_openf` and `hdf5_closef` are used to open and close an h5 file. These are only needed when writing into an h5 file (not when reading).
+- Subroutines `hdf5_read` and `hdf5_write` are used to read and write data into an h5 file. The write subroutine should be used after an h5 file has been created with `hdf5_openf`. The file should be closed after all variables have been written to it.
 - Integer type `hid_t`: needed to "label" an h5 file when opened.
 
-Finaly, note that the `Makefile` specifies and `HDF5_PATH` variable that needs to be adjusted depending on where the `include` and `lib` folders of the HDF5 library has been installed.
+Finally, note that the `Makefile` specifies the `HDF5_PATH` variable that needs to be adjusted depending on where the `include` and `lib` folders of the HDF5 library have been installed.
+
+## License
+MIT license.
