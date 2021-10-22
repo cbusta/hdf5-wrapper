@@ -33,7 +33,6 @@ gfsjoighsfdgfsl;g
 hinfo  = hdf5info(fname);
 n      = length(hinfo.GroupHierarchy.Datasets);
 vname  = cell(1,n);
-dstruc = struct;
 
 % Obtaining dataset names
 for i = 1:n
