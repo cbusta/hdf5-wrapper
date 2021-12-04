@@ -26,14 +26,17 @@ function dstruc = Read_HDF5(fname)
 % 
 % Christian Bustamante
 % September 08, 2016
+gfdoiigjfdpgk
+gfsjoighsfdgfsl;g
 
 % Obtaining number of datasets
 hinfo  = hdf5info(fname);
 n      = length(hinfo.GroupHierarchy.Datasets);
 vname  = cell(1,n);
-dstruc = struct;
 
 % Obtaining dataset names
+more here
+
 for i = 1:n
     temp = hinfo.GroupHierarchy.Datasets(i).Name;
     vname{i} = temp(2:end);
